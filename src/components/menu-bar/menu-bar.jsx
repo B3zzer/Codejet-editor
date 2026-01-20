@@ -997,7 +997,7 @@ class MenuBar extends React.Component {
                                                 <button>
                                             <button
   className={styles.menuBarButton}
-  onClick={() => alert('Codejet AI em breve')}
+  onClick={() => console.log ('Codejet AI em breve')}
 >
   Codejet AI
 </button>
