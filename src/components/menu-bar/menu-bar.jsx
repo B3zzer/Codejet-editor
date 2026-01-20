@@ -995,13 +995,7 @@ class MenuBar extends React.Component {
                                                     this.handleClickSeeCommunity(waitForUpdate);
                                                 }}
                                                 <button>
-                                            <button
-  className={styles.menuBarButton}
-  onClick={() => console.log ('Codejet AI em breve')}
->
-  Codejet AI
-</button>
-
+                                            <button>
                                                 /* eslint-enable react/jsx-no-bind */
                                             />
                                         )
