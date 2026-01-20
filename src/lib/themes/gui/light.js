@@ -1,90 +1,91 @@
 const guiColors = {
     'color-scheme': 'light',
 
-    'ui-primary': 'hsla(215, 100%, 95%, 1)', /* #E5F0FF */
-    'ui-secondary': 'hsla(215, 75%, 95%, 1)', /* #E9F1FC */
-    'ui-tertiary': 'hsla(215, 50%, 90%, 1)', /* #D9E3F2 */
+    // identidade Codejet
+    'ui-primary': '#eef0ff',
+    'ui-secondary': '#f5f6ff',
+    'ui-tertiary': '#e3e6ff',
 
-    'ui-modal-overlay': 'var(--motion-primary-transparent)',
-    'ui-modal-background': 'hsla(0, 100%, 100%, 1)', /* #FFFFFF */
-    'ui-modal-foreground': 'hsla(225, 15%, 40%, 1)', /* #575E75 */
-    'ui-modal-header-background': 'var(--looks-secondary)',
-    'ui-modal-header-foreground': 'hsla(0, 100%, 100%, 1)', /* #FFFFFF */
+    'ui-modal-overlay': 'rgba(124,124,255,0.25)',
+    'ui-modal-background': '#ffffff',
+    'ui-modal-foreground': '#2b2f55',
+    'ui-modal-header-background': '#7c7cff',
+    'ui-modal-header-foreground': '#ffffff',
 
-    'ui-white': 'hsla(0, 100%, 100%, 1)', /* #FFFFFF */
-    'ui-white-dim': 'hsla(0, 100%, 100%, 0.75)', /* 25% transparent version of ui-white */
-    'ui-white-transparent': 'hsla(0, 100%, 100%, 0.25)', /* 25% transparent version of ui-white */
-    'ui-transparent': 'hsla(0, 100%, 100%, 0)', /* 25% transparent version of ui-white */
+    'ui-white': '#ffffff',
+    'ui-white-dim': 'rgba(255,255,255,0.75)',
+    'ui-white-transparent': 'rgba(255,255,255,0.25)',
+    'ui-transparent': 'rgba(255,255,255,0)',
 
-    'ui-black-transparent': 'hsla(0, 0%, 0%, 0.15)', /* 15% transparent version of black */
+    'ui-black-transparent': 'rgba(0,0,0,0.12)',
 
-    'text-primary': 'hsla(225, 15%, 40%, 1)', /* #575E75 */
-    'text-primary-transparent': 'hsla(225, 15%, 40%, 0.75)',
+    'text-primary': '#2b2f55',
+    'text-primary-transparent': 'rgba(43,47,85,0.75)',
 
-    'motion-primary': 'hsla(215, 100%, 65%, 1)', /* #4C97FF */
-    'motion-primary-transparent': 'hsla(215, 100%, 65%, 0.9)', /* 90% transparent version of motion-primary */
-    'motion-tertiary': 'hsla(215, 60%, 50%, 1)', /* #3373CC */
+    // acentos azul → roxo
+    'motion-primary': '#7c7cff',
+    'motion-primary-transparent': 'rgba(124,124,255,0.9)',
+    'motion-tertiary': '#5b5be0',
 
-    'looks-secondary': 'hsla(260, 60%, 60%, 1)', /* #855CD6 */
-    'looks-transparent': 'hsla(260, 60%, 60%, 0.35)', /* 35% transparent version of looks-tertiary */
-    'looks-light-transparent': 'hsla(260, 60%, 60%, 0.15)', /* 15% transparent version of looks-tertiary */
-    'looks-secondary-dark': 'hsla(260, 42%, 51%, 1)', /* #714EB6 */
+    'looks-secondary': '#a78bfa',
+    'looks-transparent': 'rgba(167,139,250,0.35)',
+    'looks-light-transparent': 'rgba(167,139,250,0.15)',
+    'looks-secondary-dark': '#8b6fe6',
 
-    'red-primary': 'hsla(20, 100%, 55%, 1)', /* #FF661A */
-    'red-tertiary': 'hsla(20, 100%, 45%, 1)', /* #E64D00 */
+    'red-primary': '#ff5c5c',
+    'red-tertiary': '#e04848',
 
-    'sound-primary': 'hsla(300, 53%, 60%, 1)', /* #CF63CF */
-    'sound-tertiary': 'hsla(300, 48%, 50%, 1)', /* #BD42BD */
+    'sound-primary': '#c084fc',
+    'sound-tertiary': '#a855f7',
 
-    'control-primary': 'hsla(38, 100%, 55%, 1)', /* #FFAB19 */
+    'control-primary': '#fbbf24',
+    'data-primary': '#fb923c',
 
-    'data-primary': 'hsla(30, 100%, 55%, 1)', /* #FF8C1A */
+    'pen-primary': '#34d399',
+    'pen-transparent': 'rgba(52,211,153,0.25)',
+    'pen-tertiary': '#059669',
 
-    'pen-primary': 'hsla(163, 85%, 40%, 1)', /* #0FBD8C */
-    'pen-transparent': 'hsla(163, 85%, 40%, 0.25)', /* #0FBD8C */
-    'pen-tertiary': 'hsla(163, 86%, 30%, 1)', /* #0B8E69 */
+    'error-primary': '#fb7185',
+    'error-light': '#fda4af',
+    'error-transparent': 'rgba(251,113,133,0.25)',
 
-    'error-primary': 'hsla(30, 100%, 55%, 1)', /* #FF8C1A */
-    'error-light': 'hsla(30, 100%, 70%, 1)', /* #FFB366 */
-    'error-transparent': 'hsla(30, 100%, 55%, 0.25)', /* #FF8C1A */
+    'extensions-primary': '#34d399',
+    'extensions-tertiary': '#059669',
+    'extensions-transparent': 'rgba(52,211,153,0.35)',
+    'extensions-light': '#d1fae5',
 
-    'extensions-primary': 'hsla(163, 85%, 40%, 1)', /* #0FBD8C */
-    'extensions-tertiary': 'hsla(163, 85%, 30%, 1)', /* #0B8E69 */
-    'extensions-transparent': 'hsla(163, 85%, 40%, 0.35)', /* 35% transparent version of extensions-primary */
-    'extensions-light': 'hsla(163, 57%, 85%, 1)', /* opaque version of extensions-transparent, on white bg */
+    'drop-highlight': '#c7c9ff',
 
-    'drop-highlight': 'hsla(215, 100%, 77%, 1)', /* lighter than motion-primary */
-
-    'menu-bar-background': 'var(--looks-secondary)',
+    // UI estrutural
+    'menu-bar-background': '#7c7cff',
     'menu-bar-background-image': 'none',
     'menu-bar-foreground': '#ffffff',
 
     'assets-background': '#ffffff',
-
     'input-background': '#ffffff',
-
     'popover-background': '#ffffff',
 
-    'shadow': 'hsla(0, 0%, 0%, 0.15)',
+    'shadow': 'rgba(0,0,0,0.15)',
 
-    'badge-background': '#dbebff',
-    'badge-border': '#b9d6ff',
+    'badge-background': '#eef0ff',
+    'badge-border': '#c7c9ff',
 
     'fullscreen-background': '#ffffff',
-    'fullscreen-accent': '#e8edf1',
+    'fullscreen-accent': '#f5f6ff',
 
     'page-background': '#ffffff',
-    'page-foreground': '#000000',
+    'page-foreground': '#2b2f55',
 
-    'project-title-inactive': 'var(--ui-white-transparent)',
-    'project-title-hover': '#ffffff7f',
+    'project-title-inactive': 'rgba(255,255,255,0.6)',
+    'project-title-hover': 'rgba(255,255,255,0.85)',
 
-    'link-color': '#2255dd',
+    'link-color': '#7c7cff',
 
     'filter-icon-black': 'none',
     'filter-icon-gray': 'grayscale(100%)',
     'filter-icon-white': 'none',
 
+    // paint editor
     'paint-ui-pane-border': 'var(--ui-black-transparent)',
     'paint-text-primary': 'var(--text-primary)',
     'paint-form-border': 'var(--ui-black-transparent)',
