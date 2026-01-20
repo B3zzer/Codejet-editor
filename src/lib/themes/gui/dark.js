@@ -1,43 +1,41 @@
 const guiColors = {
     'color-scheme': 'dark',
 
-    'ui-primary': '#111111',
-    'ui-secondary': '#1e1e1e',
-    'ui-tertiary': '#2e2e2e',
+    // identidade Codejet
+    'ui-primary': '#7c7cff',
+    'ui-secondary': '#13182a',
+    'ui-tertiary': '#1e2240',
 
-    'ui-modal-overlay': '#333333aa',
-    'ui-modal-background': '#111111',
+    'ui-modal-overlay': '#0b0f1acc',
+    'ui-modal-background': '#0b0f1a',
     'ui-modal-foreground': '#eeeeee',
-    'ui-modal-header-background': '#333333',
+    'ui-modal-header-background': '#1e2240',
     'ui-modal-header-foreground': '#ffffff',
 
-    'ui-white': '#111111',
-
+    'ui-white': '#0b0f1a',
     'ui-black-transparent': '#ffffff26',
 
     'text-primary': '#eeeeee',
 
-    'menu-bar-background': '#333333',
+    'menu-bar-background': '#0b0f1a',
 
-    'assets-background': '#111111',
+    'assets-background': '#0b0f1a',
+    'input-background': '#13182a',
+    'popover-background': '#13182a',
 
-    'input-background': '#1e1e1e',
+    'badge-background': '#1e2240',
+    'badge-border': '#7c7cff',
 
-    'popover-background': '#1e1e1e',
+    'fullscreen-background': '#0b0f1a',
+    'fullscreen-accent': '#13182a',
 
-    'badge-background': '#16202c',
-    'badge-border': '#203652',
-
-    'fullscreen-background': '#111111',
-    'fullscreen-accent': '#111111',
-
-    'page-background': '#111111',
+    'page-background': '#0b0f1a',
     'page-foreground': '#eeeeee',
 
     'project-title-inactive': 'var(--ui-secondary)',
-    'project-title-hover': '#ffffff3f',
+    'project-title-hover': '#a78bfa3f',
 
-    'link-color': '#44aaff',
+    'link-color': '#a78bfa',
 
     'filter-icon-black': 'invert(100%)',
     'filter-icon-gray': 'grayscale(100%) brightness(1.7)',
